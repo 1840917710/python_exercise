@@ -1,0 +1,17 @@
+# stu_info = {}
+total_stu_info = []
+while True:
+    stu_name = input("请输入学生姓名：")
+    if stu_name == "":
+        break
+    stu_gender = input("请输入学生性别：")
+#     stu_age = input("请输入学生年龄：")
+    stu_score = input("请输入学生分数：")
+    stu_info["name"] = stu_name
+    stu_info["gender"] = stu_gender
+    stu_info["age"] = stu_age
+    stu_info["score"] = stu_score
+    # stu_info ={"name":stu_name,"gender":stu_gender,"age":stu_age,"score":stu_score}
+    total_stu_info.append(stu_info)
+for item in total_stu_info:
+    print(item)
